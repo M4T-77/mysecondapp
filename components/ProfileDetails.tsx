@@ -1,5 +1,6 @@
 import React from 'react'
-import { Image, Text, View } from 'react-native'
+import { Image, View } from 'react-native'
+import CustomText from './ui/CustomText'
 import IconButton from './ui/IconButton'
 
 const ProfileDetails = () => {
@@ -9,8 +10,8 @@ const ProfileDetails = () => {
         source={require("../assets/images/donpollo.png")}
         className="w-32 h-32 rounded-full"
       />
-      <Text className="text-black text-2xl font-bold">Don Pollo</Text>
-      <Text className="text-black text-2xl font-bold">King of Ohio 🔥☠️</Text>
+      <CustomText variant='title' value='Don Pollo'/>
+      <CustomText variant='subtitle' value='King of OHIO 💀🔥'/>
 
       <IconButton iconName='logo-instagram'></IconButton>
       <IconButton iconName='logo-facebook'></IconButton>

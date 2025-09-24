@@ -1,6 +1,6 @@
-import IconButton from "@/components/IconButton"
 import React from 'react'
 import { Image, Text, View } from 'react-native'
+import IconButton from './ui/IconButton'
 
 const ProfileDetails = () => {
   return (
@@ -11,7 +11,12 @@ const ProfileDetails = () => {
       />
       <Text className="text-black text-2xl font-bold">Don Pollo</Text>
       <Text className="text-black text-2xl font-bold">King of Ohio 🔥☠️</Text>
-      <IconButton></IconButton>
+
+      <IconButton iconName='logo-instagram'></IconButton>
+      <IconButton iconName='logo-facebook'></IconButton>
+      <IconButton iconName='logo-tiktok'></IconButton>
+      <IconButton iconName='logo-linkedin'></IconButton>
+      
     </View>
   )
 }

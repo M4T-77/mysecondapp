@@ -4,14 +4,14 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 interface IconButtonProps{
   presionar?: () => void;
   iconName: String;
-  color?: String;//Color del icono (OPCIONAL {?})
+  color?: string;//Color del icono (OPCIONAL {?})
 }
-const IconButton = ({presionar, iconName}: IconButtonProps) => {
-  return (
-    <Pressable onPress={presionar}>
-      <Ionicons name = {iconName as any} size={24} color="black" />
-    </Pressable>
-  )
+const IconButton = ({presionar, iconName, color}: IconButtonProps) => {
+ return (
+   <Pressable onPress={presionar} className="bg-white rounded-xl shadow-lg border-gray-200 p-4">
+     <Ionicons name = {iconName as any} size={28} color={color} />
+   </Pressable>
+ )
 }
 
 export default IconButton
